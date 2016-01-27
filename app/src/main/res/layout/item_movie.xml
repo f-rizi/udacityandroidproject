@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/movie"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:clickable="true">
+
+    <!--<com.example.emamianrizif.Movie.views.PosterImageView-->
+        <!--android:id="@+id/poster"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:scaleType="centerCrop"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:transitionName="movie_poster"/>-->
+
+    <com.example.fatemeh.udacityandroidcourseproject.Views.PosterImageView
+        android:id="@+id/poster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:transitionName="movie_poster" />
+
+    <!--<ImageView-->
+        <!--android:id="@+id/poster"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:scaleType="centerCrop"-->
+    <!--android:adjustViewBounds="true"-->
+    <!--android:transitionName="movie_poster" />-->
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/poster"
+        android:layout_alignTop="@+id/poster"
+        android:layout_alignEnd="@+id/poster"
+        android:layout_alignBottom="@+id/poster"
+        android:layout_margin="1dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceButton"
+        android:textSize="18sp"
+        android:visibility="invisible"
+        android:layout_alignLeft="@+id/poster"
+        android:layout_alignRight="@+id/poster" />
+</RelativeLayout>

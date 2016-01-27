@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Movies</string>
+
+    <!-- actions (START)-->
+    <string name="action_settings">Settings</string>
+    <!-- actions (END)-->
+
+    <!--Setting Activity (START)-->
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="pref_header_general">General</string>
+    <string name="pref_movie_sort_message">Sort movies based on</string>
+    <string name="pref_movie_sort_key">movie_sort</string>
+    <string name="pref_movie_sort_default">popularity.desc</string>
+    <string name="pref_movie_sort_favorite">Favorite</string>
+    <string name="pref_movie_sort_popular_title">Most Popular</string>
+    <string name="pref_movie_sort_rated_title">Highest Rated</string>
+    <string name="pref_movie_sort_favorite_title">Favorite</string>
+    <string name="pref_movie_sort_popular_value" translatable="false">popularity.desc</string>
+    <string name="pref_movie_sort_rated_value" translatable="false">vote_count.desc</string>
+    <string name="pref_movie_sort_favorite_value" translatable="false">favorite</string>
+    <string name="prefs_notification_key" translatable="false">notification</string>
+    <string name="prefs_notification_title">Notifications</string>
+    <string name="prefs_notification_summary_off">Don\'t show notifications</string>
+    <string name="prefs_notification_summary_on">Show notifications</string>
+    <string name="prefs_notification_last_key">last_notification</string>
+    <!--Setting Activity (END)-->
+
+    <!-- Details Activity (START)-->
+    <plurals name="reviews">
+        <item quantity="one">(%d Review)</item>
+        <item quantity="other">(%d Reviews)</item>
+    </plurals>
+
+    <plurals name="videos">
+        <item quantity="one">(%d Video)</item>
+        <item quantity="other">(%d Videos)</item>
+    </plurals>
+
+    <string name="title_activity_movie_details">MovieDetailsActivity</string>
+    <string name="info">Extra Info</string>
+    <string name="add_to_favorite">Add To Favorites</string>
+    <string name="remove_from_favorite">Remove From Favorites</string>
+    <!-- Details Activity (END)-->
+
+    <!-- MovieSyncAdapter (START)-->
+    <string name="content_authority">com.example.fatemeh.udacityandroidcourseproject</string>
+    <string name="sync_account_type">udacityandroidcourseproject.fatemeh.example.com</string>
+    <!-- MovieSyncAdapter (END)-->
+
+</resources>

@@ -1,0 +1,62 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:internal="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_short">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_standard">
+
+        <com.example.fatemeh.udacityandroidcourseproject.Views.MovieDetailCardLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            internal:info_visibility="false"
+            android:layout_marginBottom="@dimen/margin_extra_short"
+            internal:item_title="Details" />
+
+        <com.example.fatemeh.udacityandroidcourseproject.Views.MovieDetailInfoLayout
+            android:id="@+id/released_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_short"
+            android:visibility="gone"
+            internal:detail_title="Released" />
+
+        <com.example.fatemeh.udacityandroidcourseproject.Views.MovieDetailInfoLayout
+            android:id="@+id/runtime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_short"
+            android:visibility="gone"
+            internal:detail_title="Vote Count" />
+
+        <com.example.fatemeh.udacityandroidcourseproject.Views.MovieDetailInfoLayout
+            android:id="@+id/budget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_short"
+            android:visibility="gone"
+            internal:detail_title="Vote Average" />
+
+        <com.example.fatemeh.udacityandroidcourseproject.Views.MovieDetailInfoLayout
+            android:id="@+id/language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_short"
+            android:visibility="gone"
+            internal:detail_title="Language" />
+
+        <com.example.fatemeh.udacityandroidcourseproject.Views.MovieDetailInfoLayout
+            android:id="@+id/vote_average"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_extra_short"
+            android:visibility="gone"
+            internal:detail_title="Popularity" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

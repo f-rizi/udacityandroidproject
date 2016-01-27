@@ -1,0 +1,61 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:internal="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:showIn="@layout/activity_movie_details">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:background="@drawable/placeholder7">
+
+            <ImageView
+                android:id="@+id/poster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimaryDark"
+                android:scaleType="centerCrop" />
+
+            <Button
+                android:id="@+id/add_to_favorite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:text="@string/add_to_favorite"
+                android:textAppearance="?android:attr/textAppearanceButton"
+                android:textColor="?attr/colorAccent"/>
+        </RelativeLayout>
+
+        <com.example.fatemeh.udacityandroidcourseproject.Views.ExpandableTextView
+            android:id="@+id/overview_expandable_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_short"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:ellipsize="end"
+            internal:collapsed_max_lines="4" />
+
+        <include layout="@layout/movie_detail_details" />
+
+        <include layout="@layout/movie_details_videos" />
+
+        <include layout="@layout/movie_details_reviews" />
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
