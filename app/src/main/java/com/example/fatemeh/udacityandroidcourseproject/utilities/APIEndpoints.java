@@ -15,7 +15,6 @@ import retrofit.http.Query;
 
 public interface APIEndpoints {
 
-    String API = "";
     String BASE_URL = "http://api.themoviedb.org/";
     String POSTER_PATH_URL = "http://image.tmdb.org/t/p/w342";
     String POSTER_H_PATH_URL = "http://image.tmdb.org/t/p/w1280";

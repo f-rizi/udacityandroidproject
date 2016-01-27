@@ -20,6 +20,7 @@ import android.support.v4.app.NotificationCompat;
 import android.support.v4.app.TaskStackBuilder;
 import android.util.Log;
 
+import com.example.fatemeh.udacityandroidcourseproject.BuildConfig;
 import com.example.fatemeh.udacityandroidcourseproject.R;
 import com.example.fatemeh.udacityandroidcourseproject.activities.MainActivity;
 import com.example.fatemeh.udacityandroidcourseproject.db.MovieContract;
@@ -116,7 +117,7 @@ public class MovieSyncAdapter extends AbstractThreadedSyncAdapter {
     private void getPopularMovies(APIEndpoints apiEndpoints) {
         String sortOrder = getContext().getResources().getString(R.string.pref_movie_sort_popular_value);
 
-        Call<DiscoverMovieResponse> call = apiEndpoints.getDiscoverMovieResponse(sortOrder, APIEndpoints.API);
+        Call<DiscoverMovieResponse> call = apiEndpoints.getDiscoverMovieResponse(sortOrder, BuildConfig.API_KEY);
 
         call.enqueue(new Callback<DiscoverMovieResponse>() {
             @Override
@@ -138,7 +139,7 @@ public class MovieSyncAdapter extends AbstractThreadedSyncAdapter {
     private void getHighRatedMovies(APIEndpoints apiEndpoints) {
         String sortOrder = getContext().getResources().getString(R.string.pref_movie_sort_rated_value);
 
-        Call<DiscoverMovieResponse> call = apiEndpoints.getDiscoverMovieResponse(sortOrder, APIEndpoints.API);
+        Call<DiscoverMovieResponse> call = apiEndpoints.getDiscoverMovieResponse(sortOrder, BuildConfig.API_KEY);
 
         call.enqueue(new Callback<DiscoverMovieResponse>() {
             @Override

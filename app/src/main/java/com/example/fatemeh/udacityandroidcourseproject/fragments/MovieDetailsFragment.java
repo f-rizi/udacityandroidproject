@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.fatemeh.udacityandroidcourseproject.BuildConfig;
 import com.example.fatemeh.udacityandroidcourseproject.R;
 import com.example.fatemeh.udacityandroidcourseproject.Views.ExpandableTextView;
 import com.example.fatemeh.udacityandroidcourseproject.Views.MovieDetailCardLayout;
@@ -220,7 +221,7 @@ public class MovieDetailsFragment extends Fragment implements View.OnClickListen
             setVideos(mVideoResponseResults);
 
         } else if (savedInstanceState == null && mGetFromDB == false) {
-            Call<VideoResponse> videoResponseCall = apiEndpoints.getMovieVideoResponse(movieId, APIEndpoints.API);
+            Call<VideoResponse> videoResponseCall = apiEndpoints.getMovieVideoResponse(movieId, BuildConfig.API_KEY);
             videoResponseCall.enqueue(new Callback<VideoResponse>() {
                 @Override
                 public void onResponse(Response<VideoResponse> response, Retrofit retrofit) {
@@ -273,7 +274,7 @@ public class MovieDetailsFragment extends Fragment implements View.OnClickListen
             setReviews(mReviewResponseResults);
 
         } else if (savedInstanceState == null && mGetFromDB == false) {
-            Call<ReviewResponse> reviewResponseCall = apiEndpoints.getMovieReviewResponse(movieId, APIEndpoints.API);
+            Call<ReviewResponse> reviewResponseCall = apiEndpoints.getMovieReviewResponse(movieId, BuildConfig.API_KEY);
             reviewResponseCall.enqueue(new Callback<ReviewResponse>() {
                 @Override
                 public void onResponse(Response<ReviewResponse> response, Retrofit retrofit) {
